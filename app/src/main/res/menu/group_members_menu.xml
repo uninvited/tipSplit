@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.miplot.tipsplit.activities.GroupMembersActivity">
+    <item
+        android:id="@+id/add_transaction"
+        android:orderInCategory="10"
+        android:title="@string/add_transaction"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/recent_transactions"
+        android:orderInCategory="20"
+        android:title="@string/recent_transaction"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/invite_user"
+        android:orderInCategory="30"
+        android:title="@string/invite_user"
+        app:showAsAction="never" />
+
+</menu>

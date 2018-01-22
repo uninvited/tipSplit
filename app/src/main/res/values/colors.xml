@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkBlue">#3F51B5</color>
+    <color name="colorPrimary">#2d7451</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2d7451</color>
+    <color name="welcomeScreenBackground">#2d7451</color>
+    <color name="positiveBalance">#288c28</color>
+    <color name="negativeBalance">#b41e1e</color>
+
+</resources>

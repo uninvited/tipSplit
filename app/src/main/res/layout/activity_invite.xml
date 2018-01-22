@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.miplot.tipsplit.activities.SignUpActivity">
+
+    <Button
+        android:id="@+id/createInviteKey"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="24sp"
+        android:padding="20dp"
+        android:onClick="onCreateInviteClick"
+        android:text="@string/create_invite_key"/>
+
+
+    <TextView
+        android:id="@+id/inviteKeyTextView"
+        android:text=""
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

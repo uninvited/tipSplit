@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TipSplit</string>
+    <string name="welcome">Welcome to TipSplit</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Login</string>
+    <string name="create_user_header">Create new user</string>
+    <string name="title_activity_groups">My Groups</string>
+    <string name="title_activity_group_members">Group Members</string>
+    <string name="title_activity_main">TmpActivity</string>
+    <string name="invite_user">Invite User</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="create_invite_key">Create Invite Key</string>
+    <string name="join_group">Join group</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="create">Create</string>
+    <string name="login">Log in</string>
+    <string name="user_log_in_header">Log in</string>
+    <string name="new_group">New group</string>
+    <string name="create_new_group">Create new group</string>
+    <string name="logout">Logout</string>
+    <string name="paste_invite_key">Paste your Invite Key below</string>
+    <string name="save_txn">Save</string>
+    <string name="recent_transaction">Recent transactions</string>
+    <string name="title_activity_recent_transactions">Recent Transactions</string>
+    <string name="about">About</string>
+</resources>

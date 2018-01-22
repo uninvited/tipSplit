@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.miplot.tipsplit">
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_tipsplit_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SignUpActivity" />
+        <activity
+            android:name=".activities.GroupMembersActivity"
+            android:label="@string/title_activity_group_members"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.GroupsActivity"
+            android:label="@string/title_activity_groups"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.CreateGroupActivity" />
+        <activity android:name=".activities.TxnActivity" />
+        <activity android:name=".activities.InviteActivity" />
+        <activity android:name=".activities.JoinGroupActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.RecentTxnsActivity"
+            android:label="@string/title_activity_recent_transactions">
+
+        </activity>
+    </application>
+
+</manifest>
