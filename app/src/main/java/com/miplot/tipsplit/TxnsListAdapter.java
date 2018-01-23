@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
@@ -13,6 +15,7 @@ public class TxnsListAdapter extends RecyclerView.Adapter<TxnsListAdapter.ViewHo
     private List<Txn> txns;
     private int size;
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    NumberFormat decimalFormat = new DecimalFormat("#0.00");
 
     public TxnsListAdapter(List<Txn> txns) {
         super();
@@ -57,7 +60,9 @@ public class TxnsListAdapter extends RecyclerView.Adapter<TxnsListAdapter.ViewHo
                 sb.append(", ");
             }
             first = false;
-            sb.append(txnItem.getUser().getLogin()).append(": ").append(txnItem.getSum());
+            sb.append(txnItem.getUser().getLogin())
+                    .append(": ")
+                    .append(decimalFormat.format(txnItem.getSum()));
         }
         holder.detailsTextView.setText(sb.toString());
     }
