@@ -17,9 +17,6 @@ import com.miplot.tipsplit.MainApplication;
 import com.miplot.tipsplit.R;
 import com.miplot.tipsplit.User;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class LoginActivity extends AppCompatActivity {
     public static final String RESULT_LOGIN_KEY = "result_login_key";
 
@@ -50,8 +47,9 @@ public class LoginActivity extends AppCompatActivity {
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
                             if (documentSnapshot.exists()) {
                                 String correctPass = documentSnapshot.getString(Keys.USER_PASSWORD_KEY);
-                                if (correctPass.equals(Base64.encodeToString(password.getBytes(), 0))) {
+                                String enteredPass = Base64.encodeToString(password.getBytes(), Base64.NO_WRAP);
 
+                                if (correctPass.equals(enteredPass)) {
                                     String firstName = documentSnapshot.getString(Keys.USER_FIRST_NAME_KEY);
                                     String lastName = documentSnapshot.getString(Keys.USER_LAST_NAME_KEY);
                                     User user = new User(login, firstName, lastName);

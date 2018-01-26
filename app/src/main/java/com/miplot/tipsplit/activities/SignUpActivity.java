@@ -76,7 +76,7 @@ public class SignUpActivity extends AppCompatActivity {
                             } else {
                                 Map<String, Object> userData = new HashMap<>();
                                 userData.put(Keys.USER_LOGIN_KEY, user.getLogin());
-                                userData.put(Keys.USER_PASSWORD_KEY, Base64.encodeToString(password.getBytes(), 0));
+                                userData.put(Keys.USER_PASSWORD_KEY, Base64.encodeToString(password.getBytes(), Base64.NO_WRAP));
                                 userData.put(Keys.USER_FIRST_NAME_KEY, user.getFirstName());
                                 userData.put(Keys.USER_LAST_NAME_KEY, user.getLastName());
                                 app.getStore().collection(Keys.COL_USERS).document(user.getLogin()).set(userData)
